@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
 public class CapitalLetter {
     public static String upFirst(String inWord) {
         //Проверка, является ли первая буква слова маленькой
-        Pattern pattern = Pattern.compile("^[a-zа-яё]", Pattern.UNICODE_CHARACTER_CLASS);
+        Pattern pattern = Pattern.compile("^[a-zа-яё]");
         Matcher matcher = pattern.matcher(inWord);
         return (matcher.find())?matcher.group().toUpperCase() + inWord.substring(1):inWord;
     }
