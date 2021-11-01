@@ -1,5 +1,6 @@
 package com.pb.chesnokov.hw5;
 
+//класс Book
 public class Book {
     private static int booksCount = 0;
 

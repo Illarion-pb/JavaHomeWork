@@ -3,6 +3,7 @@ package com.pb.chesnokov.hw5;
 import java.util.ArrayList;
 import java.util.List;
 
+//класс Library
 public class Library {
     public static void main(String[] args) {
         List<Book> books = new ArrayList<>();

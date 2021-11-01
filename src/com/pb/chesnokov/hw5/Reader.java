@@ -2,6 +2,8 @@ package com.pb.chesnokov.hw5;
 
 import java.util.Formatter;
 
+
+//класс Reader
 public class Reader {
     private static int readersCount = 0;
 
