@@ -1,6 +1,7 @@
 package com.pb.chesnokov.hw15;
 
 import javax.swing.*;
+import javax.swing.text.DefaultCaret;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -43,6 +44,8 @@ public class Client {
                 messages = new JTextArea();
                 messages.setRows(20);
                 messages.setEditable(false);
+                DefaultCaret caret = (DefaultCaret)messages.getCaret();
+                caret.setUpdatePolicy(DefaultCaret.ALWAYS_UPDATE);
                 messagesScroll = new JScrollPane(messages);
                 messagePanel = new JPanel();
                 messagePanel.setLayout(new BorderLayout());
